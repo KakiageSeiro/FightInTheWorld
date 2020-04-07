@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
+	reverse()
+}
+
+func reverse() {
 	ints := make([]int, 100)
 	iota := 0
 	for i := range ints {
