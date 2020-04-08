@@ -7,8 +7,14 @@ import (
 
 func main() {
 	//reverse()
+	//powersOf2()
+	sqrt()
+}
 
-	powersOf2()
+func sqrt() {
+	fmt.Println(logic.Sqrt(9))
+	fmt.Println(logic.Sqrt(10))
+	fmt.Println(logic.Sqrt(100))
 }
 
 func powersOf2() {
