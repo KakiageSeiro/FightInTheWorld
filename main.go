@@ -9,7 +9,8 @@ func main() {
 	//reverse()
 	//powersOf2()
 	//sqrt()
-	dupulicationTask()
+	//dupulicationTask()
+	logic.UnnecessaryTask1()
 }
 
 func dupulicationTask() {
