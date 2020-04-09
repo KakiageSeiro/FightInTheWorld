@@ -8,7 +8,14 @@ import (
 func main() {
 	//reverse()
 	//powersOf2()
-	sqrt()
+	//sqrt()
+	dupulicationTask()
+}
+
+func dupulicationTask() {
+	//logic.DuplicationTask1()
+	logic.DuplicationTask2()
+	//logic.DuplicationTask3()
 }
 
 func sqrt() {
