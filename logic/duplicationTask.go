@@ -15,7 +15,7 @@ type cd struct {
 //O(n^4)だけど、計算しなくなった分は減っている
 func UnnecessaryTask1() {
 	hitCount := 0 //cube(a)+cube(b) == cube(c)+cube(d)がtrueとなる全ての組み合わせの数
-	n := 10 //a,b,c,dが取りうる最大数(最小値は1)
+	n := 10       //a,b,c,dが取りうる最大数(最小値は1)
 
 	//c,dの計算結果をMapに保存しておく(key:計算結果, value:cとdの組み合わせのslise)
 	m := createCDMap(n)

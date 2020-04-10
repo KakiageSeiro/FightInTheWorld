@@ -81,7 +81,6 @@ func DuplicationTask3() {
 				aaa := cube(a)+cube(b) == cube(c)+cube(int(d))
 				fmt.Println(aaa)
 
-
 				//dは計算によって求めたので、整数値であることを確認する条件も追加している
 				if cube(a)+cube(b) == cube(c)+cube(int(d)) && 0 <= d && int(d) <= n {
 					hitCount++
