@@ -1,16 +1,56 @@
 package main
 
 import (
+	"./PracticeExercises/chapter1"
 	"./logic"
 	"fmt"
 )
 
+//今着手している問題をここからキックする
+//すでに完了した問題はコメントアウトしておく
 func main() {
+	println("#############################出力#################################")
+
+	//■9章「問題」より前の章で登場した問題やサンプルコード■
 	//reverse()
 	//powersOf2()
 	//sqrt()
 	//dupulicationTask()
-	logic.UnnecessaryTask1()
+	//logic.UnnecessaryTask1()
+
+	//■9章「問題」
+	isUniqueString()
+
+}
+
+func isUniqueString() {
+	str1 := "abcde"
+	str2 := "abcdef"
+	str3 := "abcdefg"
+
+	str4 := "aacbde"
+	str5 := "abcdea"
+
+	//println(chapter1.IsUniqueString1(str1))
+	//println(chapter1.IsUniqueString1(str2))
+	//println(chapter1.IsUniqueString1(str3))
+	//
+	//println(chapter1.IsUniqueString1(str4))
+	//println(chapter1.IsUniqueString1(str5))
+
+	//println(chapter1.IsUniqueString2(str1))
+	//println(chapter1.IsUniqueString2(str2))
+	//println(chapter1.IsUniqueString2(str3))
+	//
+	//println(chapter1.IsUniqueString2(str4))
+	//println(chapter1.IsUniqueString2(str5))
+
+	println(chapter1.IsUniqueString3(str1))
+	println(chapter1.IsUniqueString3(str2))
+	println(chapter1.IsUniqueString3(str3))
+
+	println(chapter1.IsUniqueString3(str4))
+	println(chapter1.IsUniqueString3(str5))
 }
 
 func dupulicationTask() {
