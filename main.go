@@ -21,9 +21,16 @@ func main() {
 	//■9章「問題」
 	//isUniqueString()
 	println(chapter1.Permutation("aaabb", "aaabb"))
-	println(chapter1.Permutation("aaabb", "bbb"))
 	println(chapter1.Permutation("aaabb", "babaa"))
 	println(chapter1.Permutation("abbaa", "babaa"))
+	println(chapter1.Permutation("aaabB", "aaabB"))
+
+	println("###ここからfalse###")
+
+	println(chapter1.Permutation("aaabb", "bbb"))
+	println(chapter1.Permutation("aaabb", "aacbb"))
+	println(chapter1.Permutation("aaabb", "aaab b"))
+	println(chapter1.Permutation("aaabb", "aaabB"))
 
 }
 

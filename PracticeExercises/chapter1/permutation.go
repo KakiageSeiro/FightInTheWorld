@@ -1,5 +1,10 @@
 package chapter1
 
+/*
+1.2 順列チェック
+2つの文字列の片方が、もう片方の並び替えであるかを判定する
+*/
+
 import "fmt"
 
 type str struct {
@@ -8,7 +13,13 @@ type str struct {
 	hitCount int
 }
 
+//時間計算量 O(n)
+//空間計算量 O(n)
 func Permutation(array1, array2 string) bool {
+
+	if len(array1) != len(array2) {
+		return false
+	}
 
 	strs := []str{}
 	for _, v := range array1 {
