@@ -19,7 +19,11 @@ func main() {
 	//logic.UnnecessaryTask1()
 
 	//■9章「問題」
-	isUniqueString()
+	//isUniqueString()
+	println(chapter1.Permutation("aaabb", "aaabb"))
+	println(chapter1.Permutation("aaabb", "bbb"))
+	println(chapter1.Permutation("aaabb", "babaa"))
+	println(chapter1.Permutation("abbaa", "babaa"))
 
 }
 
