@@ -28,6 +28,7 @@ func main() {
 	println("###ここからfalse###")
 
 	println(chapter1.Permutation("aaabb", "bbb"))
+	println(chapter1.Permutation("aaabb", "aaabbb"))
 	println(chapter1.Permutation("aaabb", "aacbb"))
 	println(chapter1.Permutation("aaabb", "aaab b"))
 	println(chapter1.Permutation("aaabb", "aaabB"))

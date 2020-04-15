@@ -17,6 +17,9 @@ type str struct {
 //空間計算量 O(n)
 func Permutation(array1, array2 string) bool {
 
+	//array1よりarray2のほうが文字数が大きい場合、array1から作成したMAPであるstrsに存在する文字のみが、
+	//array2に同数存在するかを検証してしまうため、"aaa"と"aaab"が並び替え文字列として判定されてしまう
+	//そのため文字列の長さが違う時点でfalseにする
 	if len(array1) != len(array2) {
 		return false
 	}
