@@ -20,6 +20,30 @@ func main() {
 
 	//■9章「問題」
 	//isUniqueString()
+	//permutation()
+	palindrome()
+}
+
+func palindrome() {
+	println(chapter1.Palindrome("a"))
+	println(chapter1.Palindrome("aa aa aa"))
+	println(chapter1.Palindrome("abcd cba"))
+	println(chapter1.Palindrome("abcdd cba"))
+	println(chapter1.Palindrome("abcd d cba"))
+	println(chapter1.Palindrome("abcd dcba"))
+	println(chapter1.Palindrome("aabbccddee"))
+	println(chapter1.Palindrome("aabbccdde"))
+	println(chapter1.Palindrome("a   dd ee ff"))
+	println(chapter1.Palindrome("aaBBcc"))
+	println(chapter1.Palindrome("aaBbBcc"))
+	println("###########ここからfalse#############")
+	println(chapter1.Palindrome("ab"))
+	println(chapter1.Palindrome("ab   dd ee ff"))
+	println(chapter1.Palindrome("abcde edcba g h"))
+	println(chapter1.Palindrome("aaBbBcc B"))
+}
+
+func permutation() {
 	println(chapter1.Permutation("aaabb", "aaabb"))
 	println(chapter1.Permutation("aaabb", "babaa"))
 	println(chapter1.Permutation("abbaa", "babaa"))
@@ -32,7 +56,6 @@ func main() {
 	println(chapter1.Permutation("aaabb", "aacbb"))
 	println(chapter1.Permutation("aaabb", "aaab b"))
 	println(chapter1.Permutation("aaabb", "aaabB"))
-
 }
 
 func isUniqueString() {
