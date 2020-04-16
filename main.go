@@ -21,7 +21,37 @@ func main() {
 	//■9章「問題」
 	//isUniqueString()
 	//permutation()
-	palindrome()
+	//palindrome()
+	oneShotConversion()
+}
+
+func oneShotConversion() {
+	println("### 1文字削除で同じ文字列になる")
+	println(chapter1.OneShotConversion("pale", "ple"))
+	println(chapter1.OneShotConversion("pales", "pale"))
+	println("### 1文字挿入で同じ文字列になる")
+	println(chapter1.OneShotConversion("ple", "pale"))
+	println(chapter1.OneShotConversion("ale", "pale"))
+	println("### 1文字変換で同じ文字列になる")
+	println(chapter1.OneShotConversion("pale", "bale"))
+	println(chapter1.OneShotConversion("pale", "aale"))
+
+	println("######################## ここからfalse ##########################")
+
+	println("### 1文字削除で同じ文字列になる")
+	println(chapter1.OneShotConversion("pale", "paa"))
+	println(chapter1.OneShotConversion("pale", "pa"))
+	println(chapter1.OneShotConversion("pale", ""))
+
+	println("### 1文字挿入で同じ文字列になる")
+	println(chapter1.OneShotConversion("pal", "palll"))
+	println(chapter1.OneShotConversion("pale", "palaa"))
+	println(chapter1.OneShotConversion("pale", "aaaaaaaaaaaaaaaaa"))
+
+	println("### 1文字変換で同じ文字列になる")
+	println(chapter1.OneShotConversion("pale", "bake"))
+	println(chapter1.OneShotConversion("pale", "aaaa"))
+	println(chapter1.OneShotConversion("pale", "pppe"))
 }
 
 func palindrome() {
