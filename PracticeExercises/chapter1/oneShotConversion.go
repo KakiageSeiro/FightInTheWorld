@@ -13,52 +13,32 @@ func OneShotConversion(before, after string) bool {
 		return convert2(before, after)
 	} else if len(before) > len(after) {
 		//削除
-		return delete(before, after)
+		return oneLetterDifference(before, after)
 	} else if len(before) < len(after) {
 		//挿入
-		return insert(before, after)
+		return oneLetterDifference(after, before)
 	}
 
 	return false
 }
 
-func insert(before, after string) bool {
-	if len(before) != len(after)-1 {
+//時間 O(n)
+//空間 O(1)
+func oneLetterDifference(longStr, shortStr string) bool {
+
+	if len(longStr) != len(shortStr)+1 {
 		return false
 	}
 
-	beforeSlice := stringToSlice(before)
-	afterSlice := stringToSlice(after)
+	longSlice := stringToSlice(longStr)
+	shortSlice := stringToSlice(shortStr)
 
-	for i := range beforeSlice {
+	for i := range shortSlice {
 
-		//beforeとafterで違う文字がある場合、その文字をbeforeに挿入した結果同じ文字になる
-		//違う文字を見つけたらafterの次の文字とも比較して、一致しない（1文字削除しても文字が違う）場合はfalseとする
-		if beforeSlice[i] != afterSlice[i] {
-			if beforeSlice[i] != afterSlice[i+1] {
-				return false
-			}
-		}
-	}
-
-	return true
-}
-
-func delete(before, after string) bool {
-
-	if len(before) != len(after)+1 {
-		return false
-	}
-
-	beforeSlice := stringToSlice(before)
-	afterSlice := stringToSlice(after)
-
-	for i := range afterSlice {
-
-		//beforeとafterで違う文字ある場合、その文字を削除した結果がafterになる
-		//違う文字を見つけたらbeforeの次の文字とも比較して、一致しない（1文字削除しても文字が違う）場合はfalseとする
-		if beforeSlice[i] != afterSlice[i] {
-			if beforeSlice[i+1] != afterSlice[i] {
+		//longとshortで違う文字ある場合、その文字を削除した結果がshortになる
+		//違う文字を見つけたらlongの次の文字と比較して、一致しない（1文字削除しても文字が違う）場合はfalseとする
+		if longSlice[i] != shortSlice[i] {
+			if longSlice[i+1] != shortSlice[i] {
 				return false
 			}
 		}
