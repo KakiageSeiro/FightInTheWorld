@@ -17,10 +17,11 @@ func Palindrome(s string) bool {
 
 	//空白の除去(全角とかはとりあえず考慮しない)
 	s2 := strings.Replace(s, " ", "", -1)
+	s3 := strings.ToLower(s2)
 
 	//[文字コード]文字の登場回数
 	m := make(map[int32]uint)
-	for _, v := range s2 {
+	for _, v := range s3 {
 		_, ok := m[v]
 		if ok {
 			m[v]++

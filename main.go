@@ -36,11 +36,13 @@ func palindrome() {
 	println(chapter1.Palindrome("a   dd ee ff"))
 	println(chapter1.Palindrome("aaBBcc"))
 	println(chapter1.Palindrome("aaBbBcc"))
+	println(chapter1.Palindrome("Tact Coa"))
+	println(chapter1.Palindrome("tact coa"))
+	println(chapter1.Palindrome("aaBbBcc B"))
 	println("###########ここからfalse#############")
 	println(chapter1.Palindrome("ab"))
 	println(chapter1.Palindrome("ab   dd ee ff"))
 	println(chapter1.Palindrome("abcde edcba g h"))
-	println(chapter1.Palindrome("aaBbBcc B"))
 }
 
 func permutation() {
