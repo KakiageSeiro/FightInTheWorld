@@ -22,7 +22,18 @@ func main() {
 	//isUniqueString()
 	//permutation()
 	//palindrome()
-	oneShotConversion()
+	//oneShotConversion()
+
+	println(chapter1.Compression("aabcccccaaa"))
+	println(chapter1.Compression("aaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbb"))
+	println(chapter1.Compression("aabbccdd"))
+	println(chapter1.Compression("aaBBccDD"))
+	println("### 圧縮前の文字列のほうが長いパターン")
+	println(chapter1.Compression("aabccdd"))
+	println(chapter1.Compression("a"))
+	println(chapter1.Compression("abcd"))
+	println(chapter1.Compression("aaBbccDD"))
+
 }
 
 func oneShotConversion() {
